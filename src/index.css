@@ -1,13 +1,52 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav-link {
+	@apply text-xl text-gray-100 font-bold p-4 m-2
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.active {
+	@apply text-pink-700
+}
+
+.section {
+	@apply py-4
+}
+
+.section-title {
+	@apply text-6xl text-gray-100 font-bold mb-8
+}
+
+.about-para {
+	@apply text-gray-100 mb-4 px-32
+}
+
+.hunt-logo {
+	filter: drop-shadow(2px 2px 5px white) invert(100%);
+}
+
+.note-title {
+	@apply text-xl text-green-700 font-bold
+}
+
+.note-title-important {
+	@apply text-xl text-red-500 font-bold
+}
+
+.note-title-done {
+	@apply text-xl text-gray-400 font-bold line-through
+}
+
+.pink-button {
+	@apply py-2 px-4 bg-pink-700 rounded text-gray-100 font-bold shadow-md
+}
+
+.label-input {
+	@apply pb-2 inline-block text-gray-100
+}
+
+.input-style {
+	@apply w-full rounded p-2 mb-4 text-gray-900
 }
